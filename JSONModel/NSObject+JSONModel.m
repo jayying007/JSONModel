@@ -46,6 +46,7 @@
             [object setValue:value forKey:propertyName];
         }
     }
+    free(propertyList);
     
     return object;
 }
@@ -81,6 +82,7 @@
             [json setObject:value forKey:propertyName];
         }
     }
+    free(propertyList);
     
     return json;
 }
